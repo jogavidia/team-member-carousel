@@ -1,0 +1,20 @@
+{
+  "name": "team-carousel",
+  "version": "1.0.0",
+  "description": "carousel for team page",
+  "main": "index.js",
+  "scripts": {
+    "deploy": "gh-pages -d build"
+  },
+  "keywords": [
+    "carousel"
+  ],
+  "author": "joga",
+  "license": "MIT",
+  "home" : "https://jogavidia.github.io/team-member-carousel",
+  "dependencies": {
+    "browser-sync": "^2.26.13",
+    "gh-pages": "^3.1.0",
+    "sass": "^1.30.0"
+  }
+}

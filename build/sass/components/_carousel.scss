@@ -1,0 +1,46 @@
+.main{
+    max-width: 600px;
+    margin: 0 auto;
+    .wrapper{
+        position: relative;
+        width: 100%;
+        overflow: hidden;
+        .slides-container{
+            width: 1000%;
+            display: flex;
+            transition: 900ms cubic-bezier(0.48, 0.15, 0.18, 1);
+
+            .slide-content{
+                width: 10%;
+                padding: 0 2rem;
+                text-align: center;
+                h3{
+                    padding: 3rem 0 0 0;
+                }
+                p{
+                    margin-bottom: 1.5rem;
+                    span{
+                        font-weight: 500;
+                    }
+                }
+                img{
+                    max-width: 20rem;
+                    margin-top: 2rem;
+                }
+            }
+        }
+        .prev-btn, .next-btn{
+            position: absolute;
+            top: 100%;
+            transform: translateY(-100%);
+            cursor: pointer;
+            z-index: 2;
+        }
+        .prev-btn{
+            left: 0;
+        }
+        .next-btn{
+            right: 0;
+        }
+    }
+}
