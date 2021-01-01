@@ -1,0 +1,33 @@
+// COLORS
+
+$primary: #f00f00;
+$secondary: #0044ff;
+$tertiary: #4e4e4e;
+
+$white: #ffffff;
+$black: #000000;
+
+
+// FONT SIZES
+$breakpoints: (
+  small : 480px,
+  medium: 768px,
+  large : 992px,
+  x-large : 1024px,
+);
+$h1-font-sizes: (
+    null  : (1.9rem, 1.2),
+    small : 2rem,
+    medium: (2.1rem, 1.3),
+    large : 2.2rem,
+    x-large : (2.3rem, 1.4),
+    1440px: 2.4rem,
+);
+$p-font-sizes: (
+    null  : (1.5rem, 1.3),
+    small : 1.6rem,
+    medium: (1.7rem, 1.4),
+    large : 1.8rem,
+    x-large : (1.9rem, 1.5),
+    1440px: 2.0rem,
+);

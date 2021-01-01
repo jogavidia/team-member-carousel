@@ -1,0 +1,102 @@
+header{
+
+    a{
+      color: black;
+      &.logo{
+        float: left;
+        display: block;
+        padding: 1rem;
+      }
+    }
+
+    position: fixed;
+    width: 100%;
+    background-color: $white;
+    z-index: 99;
+    > .wrap-header{
+    max-width: 96rem;
+    margin: 0 auto;
+    box-shadow: 1px 1px 4px rgba($black, $alpha: 0.1);
+      input{
+        display: none;
+        &:checked ~ .menu{
+          max-height: 300px;
+        }
+        &:checked ~ .menu-icon .nav-icon{
+          background: transparent;
+        }
+        &:checked ~ .menu-icon .nav-icon:before{
+          transform: rotate(-45deg);
+          top: 0;
+        }
+        &:checked ~ .menu-icon .nav-icon:after{
+          transform: rotate(45deg);
+          top: 0;
+        }
+      }
+      label{
+        padding: 28px 20px;
+        position: relative;
+        float: right;
+        cursor: pointer;
+        > span{
+          background: #333;
+          display: block;
+          height: 2px;
+          width: 18px;
+          position: relative;
+          transition: background .2s ease-out;
+          &:before{
+            background: #333;
+            content: "";
+            display: block;
+            height: 100%;
+            width: 100%;
+            position: absolute;
+            transition: all .2s ease-out;
+            top: 5px;
+          }
+          &:after{
+            @extend :before;
+            transition: all .2s ease-out;
+            top: -5px;
+          }
+        }
+        @media (min-width: 48em){
+          display: none;
+        }
+      }
+      ul{
+          @include font-size($p-font-sizes);
+        list-style: none;
+        overflow: hidden;
+        clear: both;
+        max-height: 0;
+        transition: max-height .2s ease-out;
+        li{
+          a{
+            text-transform: capitalize;
+            display: block;
+            padding: 20px;
+            border-right: 1px solid #aaa;
+            text-decoration: none;
+            &:hover{
+              background-color: #ddd;
+            }
+          }
+        }
+        @media (min-width: 48em){
+          clear: none;
+          float: right;
+          max-height: none;
+          li{
+            float: left;
+            a{
+              padding: 20px 30px;
+            }
+          }
+        }
+      }
+  
+    }
+  }

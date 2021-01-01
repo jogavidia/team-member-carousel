@@ -1,0 +1,38 @@
+
+h1{
+    @include font-size($h1-font-sizes);
+    color:$primary;
+}
+p{
+    @include font-size($p-font-sizes)
+}
+div.main{
+    padding-top: 4rem;
+    background: lighten($black, 95%);
+    h1{
+        max-width: 96rem;
+        text-align: center;  
+        margin: 0 auto;  
+        padding-top: 4rem;   
+    }
+    .box{
+        @extend h1;
+        display: grid;
+        grid-template-columns: 1fr;
+        gap: 2rem;
+        color: $tertiary;
+        padding: 2rem 3rem;
+        .call-boxes{
+            background: $white;
+            padding: 1rem 1.5rem;
+            box-shadow: 0 0 .2rem 0 rgba($black, 0.2);
+            transition: box-shadow 0.3s ease-in-out;
+            &:hover{
+                box-shadow: 0 0 1rem 0 rgba($black, 0.2);
+            }
+        }
+        @media (min-width: $layout-breakpoint-medium){
+            grid-template-columns: repeat(auto-fit, minmax(21rem, 1fr));
+        }
+    }
+}

@@ -1,0 +1,13 @@
+// BREAKPOINTS
+
+$browser-context: 16; // Default
+
+@function em($pixels, $context: $browser-context) {
+  @return #{$pixels/$context}em;
+}
+$layout-breakpoint-huge: em(1440);
+$layout-breakpoint-xlarge: em(1024);
+$layout-breakpoint-large: em(992);
+$layout-breakpoint-medium: em(768);
+$layout-breakpoint-small: em(480);
+$layout-breakpoint-xsmall: em(320);
