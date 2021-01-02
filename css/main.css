@@ -258,6 +258,10 @@ p {
   }
 }
 
+body {
+  background: #262626;
+}
+
 div.main {
   padding-top: 4rem;
   background: #f2f2f2;
