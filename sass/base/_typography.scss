@@ -1,0 +1,27 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500&display=swap');
+h2, h3{
+    font-family: $roboto-stack;
+    color: $black;
+    font-weight: 400;
+    padding: 4rem 0 2rem 0;
+}
+h2{
+    @include font-size($h2-font-sizes);
+    padding: 2rem 0;
+}
+h3{
+    @include font-size($h3-font-sizes);
+}
+p{
+    @include font-size($p-font-sizes);
+    font-family: $roboto-stack;
+    font-weight: 400;
+}
+a{
+    font-family: $roboto-stack;
+    color: $white;
+    text-decoration: none;
+}
+a:hover{
+    text-decoration: underline;
+}

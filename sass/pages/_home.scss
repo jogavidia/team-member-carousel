@@ -1,6 +1,6 @@
 
 h1{
-    @include font-size($h1-font-sizes);
+    @include font-size($h2-font-sizes);
     color:$primary;
 }
 p{

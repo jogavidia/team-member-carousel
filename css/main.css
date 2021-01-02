@@ -4,6 +4,7 @@ Theme Name: Wizard Theme
 Author: Joga Gavidia
 
 */
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500&display=swap");
 * {
   box-sizing: border-box;
   padding: 0;
@@ -16,6 +17,122 @@ Author: Joga Gavidia
 
 html {
   font-size: 62.5%;
+}
+
+h2, h3 {
+  font-family: "Roboto", sans-serif;
+  color: #000000;
+  font-weight: 400;
+  padding: 4rem 0 2rem 0;
+}
+
+h2 {
+  font-size: 3rem;
+  line-height: 1.4;
+  padding: 2rem 0;
+}
+@media screen and (min-width: 480px) {
+  h2 {
+    font-size: 3.2rem;
+  }
+}
+@media screen and (min-width: 600px) {
+  h2 {
+    font-size: 3.2rem;
+    line-height: 1.4;
+  }
+}
+@media screen and (min-width: 768px) {
+  h2 {
+    font-size: 3.4rem;
+  }
+}
+@media screen and (min-width: 992px) {
+  h2 {
+    font-size: 3.4rem;
+    line-height: 1.4;
+  }
+}
+@media screen and (min-width: 1200px) {
+  h2 {
+    font-size: 3.6rem;
+  }
+}
+
+h3 {
+  font-size: 1.8rem;
+  line-height: 1.4;
+}
+@media screen and (min-width: 480px) {
+  h3 {
+    font-size: 1.9rem;
+  }
+}
+@media screen and (min-width: 600px) {
+  h3 {
+    font-size: 2rem;
+    line-height: 1.4;
+  }
+}
+@media screen and (min-width: 768px) {
+  h3 {
+    font-size: 2rem;
+  }
+}
+@media screen and (min-width: 992px) {
+  h3 {
+    font-size: 2.1rem;
+    line-height: 1.4;
+  }
+}
+@media screen and (min-width: 1200px) {
+  h3 {
+    font-size: 2.1rem;
+  }
+}
+
+p {
+  font-size: 1.5rem;
+  line-height: 1.4;
+  font-family: "Roboto", sans-serif;
+  font-weight: 400;
+}
+@media screen and (min-width: 480px) {
+  p {
+    font-size: 1.6rem;
+  }
+}
+@media screen and (min-width: 600px) {
+  p {
+    font-size: 1.6rem;
+    line-height: 1.4;
+  }
+}
+@media screen and (min-width: 768px) {
+  p {
+    font-size: 1.7rem;
+  }
+}
+@media screen and (min-width: 992px) {
+  p {
+    font-size: 1.8rem;
+    line-height: 1.4;
+  }
+}
+@media screen and (min-width: 1200px) {
+  p {
+    font-size: 1.8rem;
+  }
+}
+
+a {
+  font-family: "Roboto", sans-serif;
+  color: #ffffff;
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
 }
 
 header {
@@ -89,7 +206,7 @@ header > .wrap-header label > span:after {
 }
 header > .wrap-header ul {
   font-size: 1.5rem;
-  line-height: 1.3;
+  line-height: 1.4;
   list-style: none;
   overflow: hidden;
   clear: both;
@@ -101,26 +218,26 @@ header > .wrap-header ul {
     font-size: 1.6rem;
   }
 }
+@media screen and (min-width: 600px) {
+  header > .wrap-header ul {
+    font-size: 1.6rem;
+    line-height: 1.4;
+  }
+}
 @media screen and (min-width: 768px) {
   header > .wrap-header ul {
     font-size: 1.7rem;
-    line-height: 1.4;
   }
 }
 @media screen and (min-width: 992px) {
   header > .wrap-header ul {
     font-size: 1.8rem;
+    line-height: 1.4;
   }
 }
-@media screen and (min-width: 1024px) {
+@media screen and (min-width: 1200px) {
   header > .wrap-header ul {
-    font-size: 1.9rem;
-    line-height: 1.5;
-  }
-}
-@media screen and (min-width: 1440px) {
-  header > .wrap-header ul {
-    font-size: 2rem;
+    font-size: 1.8rem;
   }
 }
 header > .wrap-header ul li a {
@@ -194,67 +311,67 @@ header > .wrap-header ul li a:hover {
 }
 
 h1, div.main .box {
-  font-size: 1.9rem;
-  line-height: 1.2;
+  font-size: 3rem;
+  line-height: 1.4;
   color: #f00f00;
 }
 @media screen and (min-width: 480px) {
   h1, div.main .box {
-    font-size: 2rem;
+    font-size: 3.2rem;
+  }
+}
+@media screen and (min-width: 600px) {
+  h1, div.main .box {
+    font-size: 3.2rem;
+    line-height: 1.4;
   }
 }
 @media screen and (min-width: 768px) {
   h1, div.main .box {
-    font-size: 2.1rem;
-    line-height: 1.3;
+    font-size: 3.4rem;
   }
 }
 @media screen and (min-width: 992px) {
   h1, div.main .box {
-    font-size: 2.2rem;
-  }
-}
-@media screen and (min-width: 1024px) {
-  h1, div.main .box {
-    font-size: 2.3rem;
+    font-size: 3.4rem;
     line-height: 1.4;
   }
 }
-@media screen and (min-width: 1440px) {
+@media screen and (min-width: 1200px) {
   h1, div.main .box {
-    font-size: 2.4rem;
+    font-size: 3.6rem;
   }
 }
 
 p {
   font-size: 1.5rem;
-  line-height: 1.3;
+  line-height: 1.4;
 }
 @media screen and (min-width: 480px) {
   p {
     font-size: 1.6rem;
   }
 }
+@media screen and (min-width: 600px) {
+  p {
+    font-size: 1.6rem;
+    line-height: 1.4;
+  }
+}
 @media screen and (min-width: 768px) {
   p {
     font-size: 1.7rem;
-    line-height: 1.4;
   }
 }
 @media screen and (min-width: 992px) {
   p {
     font-size: 1.8rem;
+    line-height: 1.4;
   }
 }
-@media screen and (min-width: 1024px) {
+@media screen and (min-width: 1200px) {
   p {
-    font-size: 1.9rem;
-    line-height: 1.5;
-  }
-}
-@media screen and (min-width: 1440px) {
-  p {
-    font-size: 2rem;
+    font-size: 1.8rem;
   }
 }
 

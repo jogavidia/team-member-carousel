@@ -7,27 +7,48 @@ $tertiary: #4e4e4e;
 $white: #ffffff;
 $black: #000000;
 
+//FONT FAMILY
+$inter-stack: 'Inter', sans-serif;
+$roboto-stack: 'Roboto', sans-serif;
 
 // FONT SIZES
+// FONT SIZES
 $breakpoints: (
-  small : 480px,
-  medium: 768px,
-  large : 992px,
-  x-large : 1024px,
+    xsmall    : 480px,
+    small     : 600px,
+    medium    : 768px,
+    large     : 992px,
+    xlarge    : 1200px,
 );
-$h1-font-sizes: (
-    null  : (1.9rem, 1.2),
-    small : 2rem,
-    medium: (2.1rem, 1.3),
-    large : 2.2rem,
-    x-large : (2.3rem, 1.4),
-    1440px: 2.4rem,
+$h2-font-sizes: (
+    null    : (3.0rem, 1.4),
+    xsmall  : 3.2rem,
+    small   : (3.2rem, 1.4),
+    medium  : 3.4rem,
+    large   : (3.4rem, 1.4),
+    xlarge  : 3.6rem,
 );
+$h3-font-sizes: (
+    null    : (1.8rem, 1.4),
+    xsmall  : 1.9rem,
+    small   : (2.0rem, 1.4),
+    medium  : 2.0rem,
+    large   : (2.1rem, 1.4),
+    xlarge  : 2.1rem,
+);
+
 $p-font-sizes: (
-    null  : (1.5rem, 1.3),
-    small : 1.6rem,
-    medium: (1.7rem, 1.4),
-    large : 1.8rem,
-    x-large : (1.9rem, 1.5),
-    1440px: 2.0rem,
+    null  : (1.5rem, 1.4),
+    xsmall : 1.6rem,
+    small: (1.6rem, 1.4),
+    medium : 1.7rem,
+    large : (1.8rem, 1.4),
+    xlarge : 1.8rem,
 );
+$menu-font-sizes: (
+    null  : (1.6rem, 1.4),
+);
+
+
+
+
