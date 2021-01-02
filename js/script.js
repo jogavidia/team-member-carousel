@@ -55,7 +55,7 @@ function goToSlide(slideNumber){
 window.onresize = function(){
     slideWidth = slideContent[0].clientWidth;
     slideContainer.style.transform = `translateX(-${slideWidth * currentSlide}px)`;
-    console.log(slideWidth);
+    //console.log(slideWidth);
 }
 
 
