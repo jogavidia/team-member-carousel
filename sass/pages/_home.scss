@@ -1,42 +1,52 @@
 
 h1{
     @include font-size($h2-font-sizes);
-    color:$primary;
+    color:rgb(104, 104, 104);
+    text-align: center;
+    background: #000;
+    // padding: 0 4rem;
 }
 p{
-    @include font-size($p-font-sizes)
+    @include font-size($p-font-sizes);
+    color: rgb(171, 171, 171);
 }
 body{
     background: rgb(38, 38, 38);
 }
 div.main{
-    padding-top: 4rem;
-    background: lighten($black, 95%);
-    margin-top: 10%;
-    h1{
-        max-width: 96rem;
-        text-align: center;  
-        margin: 0 auto;  
-        padding-top: 4rem;   
-    }
-    .box{
-        @extend h1;
-        display: grid;
-        grid-template-columns: 1fr;
-        gap: 2rem;
-        color: $tertiary;
-        padding: 2rem 3rem;
-        .call-boxes{
-            background: $white;
-            padding: 1rem 1.5rem;
-            box-shadow: 0 0 .2rem 0 rgba($black, 0.2);
-            transition: box-shadow 0.3s ease-in-out;
-            &:hover{
-                box-shadow: 0 0 1rem 0 rgba($black, 0.2);
-            }
-        }
-        @media (min-width: $layout-breakpoint-medium){
-            grid-template-columns: repeat(auto-fit, minmax(21rem, 1fr));
-        }
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    -webkit-transform: translateY(-50%);
+    left: 0;
+    right: 0;
+    .outer_wrapper{
+        padding: 4rem;
+        padding-top: 0;
+        
+        .wrapper{
+            background: rgb(74, 74, 74);
+            box-shadow: 6px 6px 10px rgba( #000000, 0.5);
+            .box{
+                @extend h1;
+                display: grid;
+                grid-template-columns: 1fr;
+                gap: 2rem;
+                color: $tertiary;
+                padding: 2rem 3rem;
+                .call-boxes{
+                    background: $white;
+                    padding: 1rem 1.5rem;
+                    box-shadow: 0 0 .2rem 0 rgba($black, 0.2);
+                    transition: box-shadow 0.3s ease-in-out;
+                    &:hover{
+                        box-shadow: 0 0 1rem 0 rgba($black, 0.2);
+                    }
+                }
+                @media (min-width: $layout-breakpoint-medium){
+                    grid-template-columns: repeat(auto-fit, minmax(21rem, 1fr));
+                }
+            }        
+        }        
     }
 }

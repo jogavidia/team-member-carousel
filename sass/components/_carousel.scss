@@ -5,6 +5,7 @@
         position: relative;
         width: 100%;
         overflow: hidden;
+        border-radius: 0 0 3rem 3rem;
         .slides-container{
             width: 1000%;
             display: flex;
@@ -14,33 +15,48 @@
                 width: 10%;
                 padding: 0 2rem;
                 text-align: center;
-                h3{
-                    padding: 3rem 0 0 0;
-                }
-                p{
-                    margin-bottom: 1.5rem;
-                    span{
-                        font-weight: 500;
+                .self-content{
+                    width: 80%;
+                    margin: 0 auto;
+                    padding: 2rem;
+                    h3{
+                        padding: 3rem 0 0 0;
                     }
+                    p{
+                        margin-bottom: 1.5rem;
+                        font-weight: 200;
+                        span{
+                            font-weight: 400;
+                            text-transform: uppercase;
+                            color: rgb(40, 40, 40);
+                            border-bottom: 1px solid #000;
+                            border-top: 1px solid #000;
+                        }
+                    }
+                    img{
+                        max-width: 20rem;
+                        margin-top: 2rem;
+                        transition: transform .2s;
+                        &:hover{
+                            transform: scale(1.1);
+                        }
+                    }                    
                 }
-                img{
-                    max-width: 20rem;
-                    margin-top: 2rem;
-                }
+
             }
         }
         .prev-btn, .next-btn{
             position: absolute;
-            top: 100%;
+            top:90%;
             transform: translateY(-100%);
             cursor: pointer;
             z-index: 2;
         }
         .prev-btn{
-            left: 0;
+            left: 3rem;
         }
         .next-btn{
-            right: 0;
+            right: 3rem;
         }
     }
 }

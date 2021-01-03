@@ -22,14 +22,14 @@ html {
 h2, h3 {
   font-family: "Roboto", sans-serif;
   color: #000000;
-  font-weight: 400;
   padding: 4rem 0 2rem 0;
 }
 
 h2 {
   font-size: 3rem;
   line-height: 1.4;
-  padding: 2rem 0;
+  font-weight: 500;
+  padding: 1rem 0 0 0;
 }
 @media screen and (min-width: 480px) {
   h2 {
@@ -272,6 +272,7 @@ header > .wrap-header ul li a:hover {
   position: relative;
   width: 100%;
   overflow: hidden;
+  border-radius: 0 0 3rem 3rem;
 }
 .main .wrapper .slides-container {
   width: 1000%;
@@ -283,62 +284,78 @@ header > .wrap-header ul li a:hover {
   padding: 0 2rem;
   text-align: center;
 }
-.main .wrapper .slides-container .slide-content h3 {
+.main .wrapper .slides-container .slide-content .self-content {
+  width: 80%;
+  margin: 0 auto;
+  padding: 2rem;
+}
+.main .wrapper .slides-container .slide-content .self-content h3 {
   padding: 3rem 0 0 0;
 }
-.main .wrapper .slides-container .slide-content p {
+.main .wrapper .slides-container .slide-content .self-content p {
   margin-bottom: 1.5rem;
+  font-weight: 200;
 }
-.main .wrapper .slides-container .slide-content p span {
-  font-weight: 500;
+.main .wrapper .slides-container .slide-content .self-content p span {
+  font-weight: 400;
+  text-transform: uppercase;
+  color: #282828;
+  border-bottom: 1px solid #000;
+  border-top: 1px solid #000;
 }
-.main .wrapper .slides-container .slide-content img {
+.main .wrapper .slides-container .slide-content .self-content img {
   max-width: 20rem;
   margin-top: 2rem;
+  transition: transform 0.2s;
+}
+.main .wrapper .slides-container .slide-content .self-content img:hover {
+  transform: scale(1.1);
 }
 .main .wrapper .prev-btn, .main .wrapper .next-btn {
   position: absolute;
-  top: 100%;
+  top: 90%;
   transform: translateY(-100%);
   cursor: pointer;
   z-index: 2;
 }
 .main .wrapper .prev-btn {
-  left: 0;
+  left: 3rem;
 }
 .main .wrapper .next-btn {
-  right: 0;
+  right: 3rem;
 }
 
-h1, div.main .box {
+h1, div.main .outer_wrapper .wrapper .box {
   font-size: 3rem;
   line-height: 1.4;
-  color: #f00f00;
+  color: #686868;
+  text-align: center;
+  background: #000;
 }
 @media screen and (min-width: 480px) {
-  h1, div.main .box {
+  h1, div.main .outer_wrapper .wrapper .box {
     font-size: 3.2rem;
   }
 }
 @media screen and (min-width: 600px) {
-  h1, div.main .box {
+  h1, div.main .outer_wrapper .wrapper .box {
     font-size: 3.2rem;
     line-height: 1.4;
   }
 }
 @media screen and (min-width: 768px) {
-  h1, div.main .box {
+  h1, div.main .outer_wrapper .wrapper .box {
     font-size: 3.4rem;
   }
 }
 @media screen and (min-width: 992px) {
-  h1, div.main .box {
+  h1, div.main .outer_wrapper .wrapper .box {
     font-size: 3.4rem;
     line-height: 1.4;
   }
 }
 @media screen and (min-width: 1200px) {
-  h1, div.main .box {
+  h1, div.main .outer_wrapper .wrapper .box {
     font-size: 3.6rem;
   }
 }
@@ -346,6 +363,7 @@ h1, div.main .box {
 p {
   font-size: 1.5rem;
   line-height: 1.4;
+  color: #ababab;
 }
 @media screen and (min-width: 480px) {
   p {
@@ -380,34 +398,39 @@ body {
 }
 
 div.main {
-  padding-top: 4rem;
-  background: #f2f2f2;
-  margin-top: 10%;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  -webkit-transform: translateY(-50%);
+  left: 0;
+  right: 0;
 }
-div.main h1, div.main .box {
-  max-width: 96rem;
-  text-align: center;
-  margin: 0 auto;
-  padding-top: 4rem;
+div.main .outer_wrapper {
+  padding: 4rem;
+  padding-top: 0;
 }
-div.main .box {
+div.main .outer_wrapper .wrapper {
+  background: #4a4a4a;
+  box-shadow: 6px 6px 10px rgba(0, 0, 0, 0.5);
+}
+div.main .outer_wrapper .wrapper .box {
   display: grid;
   grid-template-columns: 1fr;
   gap: 2rem;
   color: #4e4e4e;
   padding: 2rem 3rem;
 }
-div.main .box .call-boxes {
+div.main .outer_wrapper .wrapper .box .call-boxes {
   background: #ffffff;
   padding: 1rem 1.5rem;
   box-shadow: 0 0 0.2rem 0 rgba(0, 0, 0, 0.2);
   transition: box-shadow 0.3s ease-in-out;
 }
-div.main .box .call-boxes:hover {
+div.main .outer_wrapper .wrapper .box .call-boxes:hover {
   box-shadow: 0 0 1rem 0 rgba(0, 0, 0, 0.2);
 }
 @media (min-width: 48em) {
-  div.main .box {
+  div.main .outer_wrapper .wrapper .box {
     grid-template-columns: repeat(auto-fit, minmax(21rem, 1fr));
   }
 }
