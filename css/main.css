@@ -276,7 +276,7 @@ header > .wrap-header ul li a:hover {
 }
 .main .wrapper .slides-container .slide-content .self-content img {
   max-width: 20rem;
-  margin-top: 2rem;
+  margin-top: 1rem;
   transition: transform 0.2s;
 }
 .main .wrapper .slides-container .slide-content .self-content img:hover {
