@@ -1,13 +1,18 @@
-@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Pirata+One&family=Roboto:wght@100;300;400;500&display=swap');
+h1{
+    font-family: $pirata-stack;
+    letter-spacing: 1.5px;
+    font-size: 4.5rem;
+    color:#4a4a4a;
+}
 h2, h3{
     font-family: $roboto-stack;
     color: $black;
-    padding: 4rem 0 2rem 0;
 }
 h2{
-    @include font-size($h2-font-sizes);
+    font-size: 3rem;
     font-weight: 500;
-    padding: 1rem 0 0 0;
+    padding: 1rem 0 0.15rem 0;
 }
 h3{
     @include font-size($h3-font-sizes);

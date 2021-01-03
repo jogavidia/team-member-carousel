@@ -4,7 +4,7 @@ Theme Name: Wizard Theme
 Author: Joga Gavidia
 
 */
-@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Pirata+One&family=Roboto:wght@100;300;400;500&display=swap");
 * {
   box-sizing: border-box;
   padding: 0;
@@ -19,44 +19,22 @@ html {
   font-size: 62.5%;
 }
 
+h1 {
+  font-family: "Pirata One", cursive;
+  letter-spacing: 1.5px;
+  font-size: 4.5rem;
+  color: #4a4a4a;
+}
+
 h2, h3 {
   font-family: "Roboto", sans-serif;
   color: #000000;
-  padding: 4rem 0 2rem 0;
 }
 
 h2 {
   font-size: 3rem;
-  line-height: 1.4;
   font-weight: 500;
-  padding: 1rem 0 0 0;
-}
-@media screen and (min-width: 480px) {
-  h2 {
-    font-size: 3.2rem;
-  }
-}
-@media screen and (min-width: 600px) {
-  h2 {
-    font-size: 3.2rem;
-    line-height: 1.4;
-  }
-}
-@media screen and (min-width: 768px) {
-  h2 {
-    font-size: 3.4rem;
-  }
-}
-@media screen and (min-width: 992px) {
-  h2 {
-    font-size: 3.4rem;
-    line-height: 1.4;
-  }
-}
-@media screen and (min-width: 1200px) {
-  h2 {
-    font-size: 3.6rem;
-  }
+  padding: 1rem 0 0.15rem 0;
 }
 
 h3 {
@@ -289,19 +267,12 @@ header > .wrap-header ul li a:hover {
   margin: 0 auto;
   padding: 2rem;
 }
-.main .wrapper .slides-container .slide-content .self-content h3 {
-  padding: 3rem 0 0 0;
-}
 .main .wrapper .slides-container .slide-content .self-content p {
   margin-bottom: 1.5rem;
-  font-weight: 200;
 }
 .main .wrapper .slides-container .slide-content .self-content p span {
   font-weight: 400;
-  text-transform: uppercase;
-  color: #282828;
-  border-bottom: 1px solid #000;
-  border-top: 1px solid #000;
+  color: #787878;
 }
 .main .wrapper .slides-container .slide-content .self-content img {
   max-width: 20rem;
@@ -325,45 +296,17 @@ header > .wrap-header ul li a:hover {
   right: 3rem;
 }
 
-h1, div.main .outer_wrapper .wrapper .box {
-  font-size: 3rem;
-  line-height: 1.4;
-  color: #686868;
+h1 {
   text-align: center;
   background: #000;
-}
-@media screen and (min-width: 480px) {
-  h1, div.main .outer_wrapper .wrapper .box {
-    font-size: 3.2rem;
-  }
-}
-@media screen and (min-width: 600px) {
-  h1, div.main .outer_wrapper .wrapper .box {
-    font-size: 3.2rem;
-    line-height: 1.4;
-  }
-}
-@media screen and (min-width: 768px) {
-  h1, div.main .outer_wrapper .wrapper .box {
-    font-size: 3.4rem;
-  }
-}
-@media screen and (min-width: 992px) {
-  h1, div.main .outer_wrapper .wrapper .box {
-    font-size: 3.4rem;
-    line-height: 1.4;
-  }
-}
-@media screen and (min-width: 1200px) {
-  h1, div.main .outer_wrapper .wrapper .box {
-    font-size: 3.6rem;
-  }
+  padding-top: 10px;
 }
 
 p {
   font-size: 1.5rem;
   line-height: 1.4;
-  color: #ababab;
+  color: #000000;
+  font-weight: 300;
 }
 @media screen and (min-width: 480px) {
   p {

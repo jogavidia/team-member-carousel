@@ -1,14 +1,13 @@
 
 h1{
-    @include font-size($h2-font-sizes);
-    color:rgb(104, 104, 104);
     text-align: center;
     background: #000;
-    // padding: 0 4rem;
+    padding-top: 10px;
 }
 p{
     @include font-size($p-font-sizes);
-    color: rgb(171, 171, 171);
+    color: $black;
+    font-weight: 300;
 }
 body{
     background: rgb(38, 38, 38);
@@ -28,7 +27,6 @@ div.main{
             background: rgb(74, 74, 74);
             box-shadow: 6px 6px 10px rgba( #000000, 0.5);
             .box{
-                @extend h1;
                 display: grid;
                 grid-template-columns: 1fr;
                 gap: 2rem;
