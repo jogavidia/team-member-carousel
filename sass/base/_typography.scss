@@ -12,7 +12,7 @@ h2, h3{
 h2{
     font-size: 3rem;
     font-weight: 500;
-    padding: 1rem 0 0.15rem 0;
+    padding: 1rem 0 0 0;
 }
 h3{
     @include font-size($h3-font-sizes);
