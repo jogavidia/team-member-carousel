@@ -22,8 +22,8 @@ html {
 h1 {
   font-family: "Pirata One", cursive;
   letter-spacing: 1.5px;
-  font-size: 4.5rem;
-  color: #4a4a4a;
+  font-size: 3.5rem;
+  color: #8a8a8a;
 }
 
 h2, h3 {
@@ -32,7 +32,7 @@ h2, h3 {
 }
 
 h2 {
-  font-size: 3rem;
+  font-size: 2rem;
   font-weight: 500;
   padding: 1rem 0 0 0;
 }
@@ -353,7 +353,7 @@ div.main .outer_wrapper {
   padding-top: 0;
 }
 div.main .outer_wrapper .wrapper {
-  background: #4a4a4a;
+  background: #8a8a8a;
   box-shadow: 6px 6px 10px rgba(0, 0, 0, 0.5);
 }
 div.main .outer_wrapper .wrapper .box {
